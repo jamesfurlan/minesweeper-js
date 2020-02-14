@@ -1,0 +1,177 @@
+body{
+	background: #ffffff;
+    font-family: arial;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.board{
+	width: 700px;
+	height: 700px;
+	background: #d0d0d0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 10px 43px -16px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 43px -16px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 43px -16px rgba(0,0,0,0.75);
+}
+
+.game{
+	position: relative;
+	width: 700px;
+	margin: 120px auto 0;
+}
+
+.cols{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+}
+
+.cols > .col{
+	position: relative;
+	float: left;
+	width: 40px;
+	height: 100%;
+}
+
+.square{
+	position: absolute;
+	left: 1px;
+    margin-top: 1px;
+    color: #000000;
+    background: #d3d3d3;
+	width: 38px;
+    height: 38px;
+    top: 0px;
+    text-align: center;
+    font-size: 2.5em;
+    border-style: groove;
+    border-width: 1px;
+    border-color: darkgrey;
+}
+
+.square:active {
+    vertical-align: top;
+    padding: 1px 1px 1px;
+}
+
+.square.flag {
+    color: #FF0000;
+    font-size: 1.8em;
+}
+
+.square.opened {
+    background: #b9b9b9
+}
+
+.square.neighbour1 {
+    color: blue;
+}
+
+.square.neighbour2 {
+    color: green;
+}
+
+.square.neighbour3 {
+    color: red;
+}
+
+.square.neighbour4 {
+    color: purple;
+}
+
+.square.neighbour5 {
+    color: maroon;
+}
+
+.square.neighbour6 {
+    color: turquoise;
+}
+
+.square.neighbour7 {
+    color: black;
+}
+
+.square.neighbour8 {
+    color: grey;
+}
+
+.optionbox {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 40px;
+}
+
+.optioncontent {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+    height: 300px;
+    border-radius: 0.5rem;
+}
+
+.container {
+    padding: 50px;
+    width: 50%;
+}
+
+.win-box {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 40px;
+    text-align: center;
+}
+
+.win-content {
+    font-size: 200px;
+    display: inline-block;
+    -webkit-text-stroke: 1px white;
+}
+
+.lossEnd{
+	-webkit-text-fill-color: #cc1d1d;
+}
+.winEnd{
+    -webkit-text-fill-color: #35c722;
+}
+
+.bomb {
+    font-size: 1.8em;
+}
+
+.square.extra {
+    background-color: #ed8cc8;
+}
+
+.detonated {
+    font-size: 1.6em;
+    background-color: #f05151;
+}
+
+.wrong {
+    font-size: 5em;
+    font-weight: bold;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minesweeper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+</head>
+
+<body>
+    <button class="restart" id="restart">New Game</button>
+    <br>
+    <button class="options" id="options">Options</button>
+    <br>
+    <b class="count" id="count">Mines:</b>
+    <div class="game" id="game">
+        <div class="board" id="board">
+            <div class="cols" id="cols">
+                    <div class="col" id="col_1">
+                        <div class="square" style="top: 0px;"></div>
+                        <div class="square" style="top: 100px;">Hi</div>
+                    </div>
+                    <div class="col" id="col_2"></div>
+                    <div class="col" id="col_3"></div>
+                    <div class="col" id="col_4"></div>
+                    <div class="col" id="col_5"></div>
+                    <div class="col" id="col_6"></div>
+                    <div class="col" id="col_7"></div>
+                </div>
+        </div>
+    </div>
+
+    <div id="optionDiv" class="optionbox">
+        <form class="optioncontent" name="options">
+            <div class="container">
+                <h1>Options</h1>
+                <label for="rows">
+                    <b>Rows</b>
+                </label>
+                <input type="text" placeholder="16" name="rows" id="rowInput">
+                <br>
+                <label for="columns">
+                    <b>Columns</b>
+                </label>
+                <input type="text" placeholder="30" name="columns" id="colInput">
+                <br>
+                <label for="mines">
+                    <b>Mines</b>
+                </label>
+                <input type="text" placeholder="99" name="mines" id="mineInput">
+                <br>
+                <button class="restart" id="restartOption">New Game</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="win-box" id="winnerDiv">
+        <h1 class="win-content container" id="winnerContainer">
+        </h1>
+    </div>
+    
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
